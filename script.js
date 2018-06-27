@@ -6,13 +6,18 @@
 var adIsViewable = false,
   viewabilityTime = 0.0,
   adElement = document.getElementById("ad"),
+  clickCounter = 0,
   percent;
+
+  adElement.onclick = countCLick;
 
 /**
  * Logs the viewability values in the console
  *
  * @override
  */
+
+  
 
 window.log = function () {
 
@@ -21,7 +26,7 @@ window.log = function () {
   viewabilityTime = adIsViewable  ?  viewabilityTime + 0.5 :  viewabilityTime;
 
   console.clear()
-  console.log("Ad is viewable: ", adIsViewable, "\nViewability time of the ad in sec:", viewabilityTime.toFixed(1), "\nPercentage:", percentage + '%');
+  console.log("Ad is viewable: ", adIsViewable, "\nViewability time of the ad in sec:", viewabilityTime.toFixed(1), "\nPercentage:", percentage + '%','\nClick counter:',clickCounter);
 };
 
 
@@ -33,3 +38,6 @@ function viewability (element, hasFocus) {
 }
 
 
+function countCLick(event) {
+  clickCounter++
+}
