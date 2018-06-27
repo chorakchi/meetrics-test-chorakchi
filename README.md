@@ -1,4 +1,14 @@
 # Meetrics Code Challenge
+---------
+
+```javascript
+function viewability (element, hasFocus) {
+  var percentX =    (element.offsetWidth-Math.min(element.offsetWidth ,Math.max(0,window.scrollX-element.offsetLeft ))) * 100 /element.offsetWidth
+  var percentY =    (element.offsetHeight-Math.min(element.offsetHeight ,Math.max(0,window.scrollY-element.offsetTop ))) * 100 /element.offsetHeight
+   return hasFocus ? (((percentX * percentY) / 100 ).toFixed()) : 0
+}
+
+```
 
 Dear future colleague,
 
