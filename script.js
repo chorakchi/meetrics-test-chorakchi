@@ -17,8 +17,7 @@ adElement.onclick = countCLick;
  * @override
  */
 
-document.body.insertAdjacentHTML('beforeend',
-  '<div id="console" style="position: fixed;height: 100px;width: 300px;padding: 30px;color: gray;background: white;border-radius: 4px;box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);bottom: 30px;left: 30px;z-index: 1;font-family: \'arial\';"></div>');
+document.body.insertAdjacentHTML('beforeend','<div id="console" style="position: fixed;height: 100px;width: 300px;padding: 30px;color: gray;background: white;border-radius: 4px;box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);bottom: 30px;left: 30px;z-index: 1;font-family: \'arial\';"></div>');
 
 window.log = function () {
 
