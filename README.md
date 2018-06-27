@@ -1,6 +1,8 @@
 # Meetrics Code Challenge
 ---------
 
+that's function make the percentage of viewability in response and we can identify viewability and be counting the time we focused on the page and viewable place of the page about advertising.
+
 ```javascript
 function viewability (element, hasFocus) {
   var percentX =    (element.offsetWidth-Math.min(element.offsetWidth ,Math.max(0,window.scrollX-element.offsetLeft ))) * 100 /element.offsetWidth
@@ -9,15 +11,12 @@ function viewability (element, hasFocus) {
 }
 
 ```
-
-Dear future colleague,
-
-Meetrics takes care of measuring the viewability of advertisements and page content of its clients.
-Therefore we've prepared a little challenge for you.
-
-The `index.html` file contains the advertisement.
-We want you to write the necessary JavaScript code inside the `script.js` file that will track a viewability of the
- ad.
+Other function for click counting.
+```javascript
+function countCLick(event) {
+  clickCounter++
+}
+```
 
 ## The ad being viewable means:
 
